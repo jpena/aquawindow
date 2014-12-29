@@ -3,3 +3,4 @@ aquabase/
 /dependency-reduced-pom.xml
 .DS_Store
 aquawindow-app.jar
+/derby.log
