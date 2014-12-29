@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aquawindow.views.mainwindow.MainWindowPresenter">
+   <children>
+      <SplitPane cacheShape="false" centerShape="false" dividerPositions="0.23677884615384615" layoutX="246.0" layoutY="136.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="490.0" prefWidth="834.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="45.0" layoutY="92.0" prefHeight="488.0" prefWidth="245.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ToolBar prefHeight="32.0" prefWidth="236.0" VBox.vgrow="NEVER">
+                           <items>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar:" />
+                              <TextField fx:id="buscarTree" onKeyReleased="#_filtrarArbol" />
+                           </items>
+                           <VBox.margin>
+                              <Insets right="1.0" />
+                           </VBox.margin>
+                        </ToolBar>
+                        <TreeView fx:id="listaMenus" onMouseClicked="#_crearTab" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TabPane fx:id="tp" layoutX="58.0" layoutY="101.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="488.0" prefWidth="621.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </SplitPane>
+   </children>
+</AnchorPane>
